@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en" ng = "app" >
+<head>
+    <meta charset="utf-8">
+    <title>DHIS2 WebApp</title>
+    <link rel="stylesheet" href="css/bootstrap.css" media="screen">
+    <link rel="stylesheet" href="css/app.css" media="screen">
+    <script src="lib/jquery-2.0.3.min.js"></script>
+    <script src="lib/highcharts.js"></script>
+    <script src="js/graph_view.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div id="chart" class="col-md-8" style="width: 500px; height: 600px;">
+            </div>
+            <div class="col-md-4 jumbotron">
+                <div class="text-center">
+                   <div id="gestational_age_title">
+                       Gestational age
+                   </div>
+                    <div id="weekNumber">
+                        38
+                    </div>
+                    <div id="dateValue">
+                        Weeks
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<script>
+    populateGraph(1,2);
+</script>
+</body>
+</html>
